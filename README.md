@@ -32,8 +32,9 @@ To get started with SneakersON, simply open the index.html file in your preferre
 ## Branches 🌿
 SneakersON is built on two branches:
 
-Simple JavaScript: The master branch utilizes plain JavaScript for functionality.
-jQuery: The jQuery branch incorporates the jQuery library for a streamlined and enhanced user experience.
+- Simple JavaScript: The master branch utilizes plain JavaScript for functionality.
+- jQuery: The jQuery branch incorporates the jQuery library for a streamlined and enhanced user experience.
+
 *and to show you that I know how to use JQuery 🤓
 
 ## How to Use 🤔
