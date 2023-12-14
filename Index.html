@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakersON - Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SneakersON</h1>
+        <h2>Where sneakers speaks louder</h2>
+    </header>
+    <div class="main">
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul id="categories">
+                <li id="all" onclick="filterCategory('All')">All</li>
+                <li id="adidas" onclick="filterCategory('Adidas')">Adidas</li>
+                <li id="converse" onclick="filterCategory('Converse')">Converse</li>
+                <li id="fila" onclick="filterCategory('Fila')">Fila</li>
+                <li id="new-balance" onclick="filterCategory('New Balance')">New Balance</li>
+                <li id="nike" onclick="filterCategory('Nike')">Nike</li>
+                <li id="puma" onclick="filterCategory('Puma')">Puma</li>
+                <li id="reebok" onclick="filterCategory('Reebok')">Reebok</li>
+                <li id="under-armor" onclick="filterCategory('Under Armor')">Under Armor</li>
+                <li id="vans" onclick="filterCategory('Vans')">Vans</li>
+                <li id="y-3" onclick="filterCategory('Y-3')">Y-3</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="sneakers" id="adidas">
+                <img src="images/sneaker1.jpg" alt="ADIDAS NITEBALL" class="zoom">
+                <h3>Adidas Originals Niteball</h3>
+                <p>Price: 729.99 RON</p>
+                <button onclick="change(-1, 'qty1')">-</button>
+                <span id="qty1">1</span>
+                <button onclick="change(1, 'qty1')">+</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="sneakers" id="nike">
+                <img src="images/sneaker2.jpg" alt="NIKE AIR FORCE 1 '07 LV8" class="zoom">
+                <h3>Nike Air Force 1 '07 LV8'</h3>
+                <p>Price: 699.99 RON</p>
+                <button onclick="change(-1, 'qty2')">-</button>
+                <span id="qty2">1</span>
+                <button onclick="change(1, 'qty2')">+</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="sneakers" id="nike">
+                <img src="images/sneaker3.jpg" alt="NIKE AIR JORDAN 1 MID SE" class="zoom">
+                <h3>Nike Air Jordan 1 Mid SE</h3>
+                <p>Price: 819.99 RON</p>
+                <button onclick="change(-1, 'qty3')">-</button>
+                <span id="qty3">1</span>
+                <button onclick="change(1, 'qty3')">+</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="sneakers" id="vans">
+                <img src="images/sneaker4.jpg" alt="VANS OLD SKOOL PIG SUEDE DOUGLAS FIR" class="zoom">
+                <h3>Vans Old Skool</h3>
+                <p>Price: 429.99 RON</p>
+                <button onclick="change(-1, 'qty4')">-</button>
+                <span id="qty4">1</span>
+                <button onclick="change(1, 'qty4')">+</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="sneakers" id="new balance">
+                <img src="images/sneaker5.jpg" alt="NEW BALANCE SPORT 2002" class="zoom">
+                <h3>New Balance Sport 2002</h3>
+                <p>Price: 749.99 RON</p>
+                <button onclick="change(-1, 'qty5')">-</button>
+                <span id="qty5">1</span>
+                <button onclick="change(1, 'qty5')">+</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="sneakers" id="puma">
+                <img src="images/sneaker6.jpg" alt="PUMA RS-X EFEKT" class="zoom">
+                <h3>Puma RS-X EFEKT</h3>
+                <p>Price: 159.99 RON</p>
+                <button onclick="change(-1, 'qty6')">-</button>
+                <span id="qty6">1</span>
+                <button onclick="change(1, 'qty6')">+</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <h4>Shopping cart is empty</h4>
+            <p id="total-price-section" style="display: none">Total Price: <span id="total-price">0</span></p>
+            <ul id="cart-items">
+                <!-- Check scripts -->
+            </ul>
+            <div class="cart-buttons">
+                <button id="hide-cart">Hide Cart</button>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            &copy; 2023 Filip Mădălin-Andrei. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
